@@ -57,13 +57,23 @@ nav .nav_list li img {
     margin-bottom: 20px;
   }
   nav .mobile_menu div {
-    width: 25px;
+    width: 32px;
     height: 2px;
     background-color: #fff;
     margin: 5px;
     transition: .3s;
+    position: relative;
   }
-
+  #nav.active .mobile_menu .line1 {
+      background-color: transparent;
+  }
+  #nav.active .mobile_menu .line2 {
+      transform: rotate(135deg);
+}
+#nav.active .mobile_menu .line3 {
+    transform: rotate(-135deg);
+    top: -7px;
+}
   nav .nav_list {
     opacity:0;
     transform: translateX(100%);
